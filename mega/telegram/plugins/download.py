@@ -427,8 +427,8 @@ async def media_receive_handler(c: Client, m: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton(text=f"{emoji.ROCKET} Streaming Link", url=file_link)],
-                [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
-                                      callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
+              #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
+               #                       callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
             ]
         )
     )
