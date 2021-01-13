@@ -41,10 +41,10 @@ async def media_receive_handler(c: Client, m: Message):
         f"http://{Common().web_fqdn}:{Common().web_port}/{fd_msg.message_id}"
 
     await m.reply_text(
-        text="What would you like to do with this file?",
+        text="Link Generated Successfully \n Copy and paste this link in your browser and the file download will start immediately \n  ",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton(text=f"{emoji.ROCKET} Streaming Link", url=file_link)],
+                [InlineKeyboardButton(text=f"{emoji.ROCKET} Direct Download Link {emoji.ROCKET}", url=file_link)],
               #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
                #                       callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
             ]
