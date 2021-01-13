@@ -45,6 +45,6 @@ async def start_message_handler(c: Client, m: Message):
 async def stop_user_from_doing_anything(_, message: Message):
     allowed_users = Common().allowed_users
     if allowed_users and message.from_user.id not in allowed_users:
-        message.stop_propagation()
-    else:
+    #    message.stop_propagation()
+    #else:
         message.continue_propagation()
