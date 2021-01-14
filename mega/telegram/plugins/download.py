@@ -41,10 +41,10 @@ async def media_receive_handler(c: Client, m: Message):
         f"http://{Common().web_fqdn}:{Common().web_port}/{fd_msg.message_id}"
 
     await m.reply_text(
-        text=f"""<b>Direct Link Generated Successfully</b> \n\n <i>Copy and Paste this Link in your Browser and the File Download will Start Immediately </i> \n\n {emoji.LINK} <b>#Link</b> : <code> {file_link} </code> \n\n\n ✪༺ ──•◈•── ──•◈•──༻✪  \n Thanks For Using <b> @Link4FilesBot </b> """,
+        text=f"""<b>Direct Link Generated Successfully</b> \n\n <i>Copy and Paste this Link in your Browser and the File Download will Start Immediately </i> \n\n\n {emoji.LINK} <b>#Link</b> : <code> {file_link} </code> \n\n\n ✪༺ ──•◈•── ──•◈•──༻✪  \n Thanks For Using <b> @Link4FilesBot </b> """,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton(text=f"{emoji.ROCKET} Direct Download Link {emoji.ROCKET}", url=file_link)],
+                [InlineKeyboardButton(text=f"{emoji.ROCKET}  Direct Download Link  {emoji.ROCKET}", url=file_link)],
                 #[InlineKeyboardButton(text=f"🎗️ ѕнαяє🎗️ ѕυρρσят 🎗", url='https://tg://msg?text=Hey%20Broh%F0%9F%A5%B0%2C%0AThis%20Bot%20Generate%20Instant%20File%20Direct%20Download%20Link%F0%9F%94%A5%0A%0ABot%20Link%20%3A-%20%40LiNk4filesbot')]
                 #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
                #                       callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
