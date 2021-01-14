@@ -45,7 +45,11 @@ async def media_receive_handler(c: Client, m: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton(text=f"{emoji.ROCKET} Direct Download Link {emoji.ROCKET}", url=file_link)],
-              #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
+                [InlinekeyboardButton(text=f"🎗️ ѕнαяє🎗️ ѕυρρσят 🎗", url='''tg://msg?text=**Hey Broh**🥰,
+__This Bot Generate Instant File Direct Download Link__🔥
+
+**Bot Link** :- @Link4FilesBot'''
+                #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
                #                       callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
             ]
         )
