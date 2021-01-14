@@ -52,7 +52,7 @@ Creator : @OO7RoBot
             reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton(text=f"⚜ Updates Channel ⚜", url='https://t.me/MyTestBotZ')],
-                [InlineKeyboardButton(text=f"🧞‍♂ Creator",url'https://t.me/OO7ROBot')]
+                [InlineKeyboardButton(text=f"🧞‍♂ Creator",url='https://t.me/OO7ROBot')]
               #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
                #                       callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
             ]
