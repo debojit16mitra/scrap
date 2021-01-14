@@ -37,8 +37,8 @@ async def start_message_handler(c: Client, m: Message):
                     )
     else:
         await m.reply_text(
-            text=f"""Hello!!
-            Hello , 
+            text=f"""Hello {}!!
+            
 I am Public link generator bot.
 
 I Will generate direct url for any Telegram Medias sent to me...
@@ -47,7 +47,7 @@ I Will generate direct url for any Telegram Medias sent to me...
 
 Creator : @OO7RoBot
 
-🌜 @MyTestBotZ 🌛"""
+🌜 @MyTestBotZ 🌛""".format(update.from_user.first_name)
         )
 
 
