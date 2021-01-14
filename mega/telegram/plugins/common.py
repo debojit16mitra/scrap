@@ -37,7 +37,7 @@ async def start_message_handler(c: Client, m: Message):
                     )
     else:
         await m.reply_text(
-            text=f"""Hello {update.from_user.first_name}!!
+            text=f"""Hello {from_user.first_name}!!
             
 I am Public link generator bot.
 
