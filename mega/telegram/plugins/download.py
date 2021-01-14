@@ -41,7 +41,7 @@ async def media_receive_handler(c: Client, m: Message):
         f"http://{Common().web_fqdn}:{Common().web_port}/{fd_msg.message_id}"
 
     await m.reply_text(
-        text=f"""Link Generated Successfully \n\n <i>Copy and Paste this Link in your Browser and the File Download will Start Immediately </i> \n\n {emoji.LINK} <b>Link</b> : <code> {file_link} </code> \n\n\n ✪༺ ──•◈•── ──•◈•──༻✪  \n Thanks For Using <b> @Link4FilesBot </b> """,
+        text=f"""<b>Direct Link Generated Successfully</b> \n\n <i>Copy and Paste this Link in your Browser and the File Download will Start Immediately </i> \n\n {emoji.LINK} <b>#Link</b> : <code> {file_link} </code> \n\n\n ✪༺ ──•◈•── ──•◈•──༻✪  \n Thanks For Using <b> @Link4FilesBot </b> """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton(text=f"{emoji.ROCKET} Direct Download Link {emoji.ROCKET}", url=file_link)],
