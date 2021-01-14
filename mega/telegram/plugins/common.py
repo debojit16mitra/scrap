@@ -39,16 +39,13 @@ async def start_message_handler(c: Client, m: Message):
     else:
         await m.reply_text(
             text=f"""Hello!!
-            
 I am Public link generator bot.
 
-I Will generate direct url for any Telegram Medias sent to me...
+<b>I can generate Direct URL of any Telegram Medias sent to me...</b>
 
 ☛ Send Me A Telegram file To get Direct link
 
-Creator : @OO7RoBot
-
-🌜 @MyTestBotZ 🌛""",
+""",
             reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton(text=f"⚜ Updates Channel ⚜", url='https://t.me/MyTestBotZ')],
