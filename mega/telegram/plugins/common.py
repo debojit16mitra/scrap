@@ -51,7 +51,7 @@ Creator : @OO7RoBot
 🌜 @MyTestBotZ 🌛""",
             reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton(text=f"{emoji.ROCKET} Direct Download Link {emoji.ROCKET}", url=file_link)],
+                [InlineKeyboardButton(text=f"{emoji.ROCKET} Direct Download Link {emoji.ROCKET}", url='https://t.me/MyTesBotZ')],
               #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
                #                       callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
             ]
