@@ -1,5 +1,6 @@
 from pyrogram import filters, emoji, Client
-from pyrogram.types import Message
+#from pyrogram.types import Message
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, ForceReply
 
 from mega.database.files import MegaFiles
 from mega.database.users import MegaUsers
@@ -47,7 +48,14 @@ I Will generate direct url for any Telegram Medias sent to me...
 
 Creator : @OO7RoBot
 
-🌜 @MyTestBotZ 🌛"""
+🌜 @MyTestBotZ 🌛""",
+            reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton(text=f"{emoji.ROCKET} Direct Download Link {emoji.ROCKET}", url=file_link)],
+              #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
+               #                       callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
+            ]
+        )
         )
 
 
