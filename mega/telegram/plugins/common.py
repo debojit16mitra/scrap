@@ -37,7 +37,17 @@ async def start_message_handler(c: Client, m: Message):
                     )
     else:
         await m.reply_text(
-            text=f"Hello! My name is Megatron {emoji.MAN_BOWING_DARK_SKIN_TONE}"
+            text=f"""Hello!!
+            Hello , 
+I am Public link generator bot.
+
+I Will generate direct url for any Telegram Medias sent to me...
+
+☛ Send Me A Telegram file To get Direct link
+
+Creator : @OO7RoBot
+
+🌜 @MyTestBotZ 🌛"""
         )
 
 
