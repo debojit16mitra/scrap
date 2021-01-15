@@ -60,7 +60,8 @@ I am Public link generator bot.
 @Client.on_message(group=-1)
 async def stop_user_from_doing_anything(_, message: Message):
     allowed_users = Common().allowed_users
-    if allowed_users and message.from_user.id not in allowed_users:
-    #    message.stop_propagation()
-    #else:
+    #if allowed_users and message.from_user.id not in allowed_users:
+    if allowed_users and message.from_user.id in allowed_users:
+        message.stop_propagation()
+    else:
         message.continue_propagation()
