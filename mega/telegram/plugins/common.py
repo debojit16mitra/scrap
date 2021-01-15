@@ -71,6 +71,6 @@ I am Public link generator bot.
 
 ☛ Send Me A Telegram file To get Direct link
 
-"""
+""")
     else:
         message.continue_propagation()
