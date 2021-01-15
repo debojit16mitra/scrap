@@ -18,7 +18,7 @@ class Common:
             self.bot_api_key = os.environ.get("TG_BOT_TOKEN")
             self.bot_dustbin = int(os.environ.get("TG_DUSTBIN_CHAT", "-100"))
             self.allowed_users = ast.literal_eval(
-                os.environ.get("ALLOWED_USERS", '[]')
+                os.environ.get("BANNED_USERS", '[]')
             )
 
             self.is_atlas = os.environ.get('IS_ATLAS', None)
