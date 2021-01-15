@@ -45,6 +45,7 @@ async def media_receive_handler(c: Client, m: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton(text=f"{emoji.ROCKET}  Direct Download Link  {emoji.ROCKET}", url=file_link)],
+                [InlineKeyboardButton(text=f"🎗️ ѕнαяє🎗️ ѕυρρσят 🎗", url='http://t.me/share/url?url=Hey%20There%E2%9D%A4%EF%B8%8F%2C%0A%20%0A%20I%20Found%20A%20Really%20Awesome%20Bot%20%20For%20Generate%20Direct%20Link/URL%20of%20any%20Telegram%20Medias.%0A%20Hope%20This%20Bot%20Helps%20You%20Too.%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F%0A%20%0A%20Bot%20Link%20%3A-%20%40Link4FilesBot')]
                 #[InlineKeyboardButton(text=f"🎗️ ѕнαяє🎗️ ѕυρρσят 🎗", url='https://tg://msg?text=Hey%20Broh%F0%9F%A5%B0%2C%0AThis%20Bot%20Generate%20Instant%20File%20Direct%20Download%20Link%F0%9F%94%A5%0A%0ABot%20Link%20%3A-%20%40LiNk4filesbot')]
                 #  [InlineKeyboardButton(text=f"{emoji.PEN} Rename File",
                #                       callback_data=f"prflrn_{m.chat.id}_{m.message_id}")]
