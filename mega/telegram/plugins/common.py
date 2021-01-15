@@ -63,7 +63,7 @@ async def stop_user_from_doing_anything(_, message: Message):
     #if allowed_users and message.from_user.id not in allowed_users:
     if allowed_users and message.from_user.id in allowed_users:
         message.stop_propagation()
-        await m.reply_text(
+    await m.reply_text(
             text=f"""Hello!!
 I am Public link generator bot.
 
