@@ -62,9 +62,7 @@ async def stop_user_from_doing_anything(_, message: Message):
     allowed_users = Common().allowed_users
     #if allowed_users and message.from_user.id not in allowed_users:
     if allowed_users and message.from_user.id in allowed_users:
-        message.stop_propagation()
-    await m.reply_text(
-            text=f"""Hello!!
+    await m.reply_text(text=f"""Hello!!
 I am Public link generator bot.
 
 <b>I can generate Direct URL of any Telegram Medias sent to me...</b>
@@ -72,5 +70,6 @@ I am Public link generator bot.
 ☛ Send Me A Telegram file To get Direct link
 
 """)
+        message.stop_propagation()
     else:
         message.continue_propagation()
